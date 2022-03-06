@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<title>Survey Form</title>
+<style>
+    #title{
+        text-align: center;
+        color:aquamarine;
+        font-size: 40px;
+    }
+    #description{
+        font-size: 13.3px;
+    }
+    #submit{
+        padding: 2.0rem 0.25rem;
+    }
+
+    .container{
+        padding: 15px;
+    }
+     
+
+   .form-group {
+        margin: 0 auto 1.25rem auto;
+        padding: 0.25rem;
+       
+    }
+
+    #container1 {     
+        position: relative;
+    }
+    .labels{
+        position: absolute;
+        top: 50px;
+        left: 405px;
+    }
+
+    .inner-div{
+        position: absolute;
+        top: 420px;
+        left: 405px;
+    }
+
+    .inner-div2{
+        position: absolute;
+        top: 950px;
+        left: 400px;
+    }
+    
+    .inner-div3{
+        position: absolute;
+        top: 1290px;
+        left: 500px;
+
+    }
+
+
+    .submit{
+        display: block;
+        background-color: rgb(76, 197, 197);
+        width: 500px;
+        padding: 0.5rem;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    
+    select{
+        width: 300%;
+        padding: 5px;
+    }
+
+    
+    #img2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        width: 850px;
+        height: 1450px;
+        opacity: 0.65;
+    }
+    #survey-form{
+        align-items: center;
+        font-size: 1.125rem;
+        margin-bottom: 0.5rem;
+        color:floralwhite;
+
+    }
+    .inp{
+        width: 300%;
+        padding: 5px;
+    }
+    p{
+        font-size: 25px;
+    }
+
+    @media(max-width: 15px){
+        .container{
+            min-width: 10px;
+        }
+    }
+    
+    @media(max-width:800px){
+        #img2{
+            min-width: 400px;
+            max-height: 1600px;
+        }    
+    }
+
+   
+   
+    
+    
+    @media(max-width: 330px){
+        .submit{
+            width: 180px;
+            padding: 5px;
+        }
+    }
+    
+</style>
+</html>
+<body background="MilkyWay.jpg">
+    <div class="container">
+        <h1 id="title">Survey Form</h1>
+    </div>
+    <form id="survey-form">
+        <div id="container1">
+            <img src="stardusts.jpg" id="img2">
+            
+            <div class="labels">
+                <label for="name">Name</label> <br> 
+                <input type="text" id="name" name="name" placeholder="Name" required class="inp">
+                <br> <br> <br>
+                <label for="email">Email</label> <br>
+                <input type="email" name="email" id="name" placeholder="email" required class="inp"> <br> <br> <br>
+                <label for="games">The game that you play often ?</label> <br>
+                <select name="Games" id="games">
+                    <option value="mine">Minecraft</option>
+                    <option value="apex">Apex Legends</option>
+                    <option value="gta">Grand Thieft Auto</option>
+                    <option value="dota">Dota 2</option>
+                </select> <br> <br> 
+               
+            </div>
+            <div class="inner-div">
+                <p>Choose your favourite games</p>
+                <label for="ass"><input type="checkbox" id="ass" name="games">Assasins Creed</label><br>
+                <label for="brawl"><input type="checkbox" id="brawl" name="games"  >Brawlhalla</label><br>
+                <label for="cs"><input type="checkbox" id="cs" name="games" >Counter Strike</label><br>
+                <label for="dota"><input type="checkbox" id="dota" name="games">Dota2</label><br>
+                <label for="eldenring"><input type="checkbox" id="eldenring" name="games">Elden Ring</label><br>
+                <label for="fifa"><input type="checkbox" id="fifa" name="games">FIFA 22 </label><br>
+                <label for="gow"><input type="checkbox" id="gow" name="games">God of War</label><br>
+                <label for="hitman"><input type="checkbox" id="hitman" name="games">Hitman</label><br>
+                <label for="lol"><input type="checkbox" id="lol" name="games">League of Legends </label><br>
+                <label for="pop"><input type="checkbox" id="pop" name="games">Prince of Persia </label><br>
+                <label for="re"><input type="checkbox" id="re" name="games">Resident Evil</label><br>
+                <label for="mario"><input type="checkbox" id="mario" name="games">Super Mario </label><br>
+                <label for="valo"><input type="checkbox" id="valo" name="games">Valorant</label><br>
+                <label for="xmen"><input type="checkbox" id="xmen" name="games">X-Men Legends </label><br>
+                <label for="y"><input type="checkbox" id="y" name="games"> </label>Yakuza<br>
+                <label for="zoo"><input type="checkbox" id="zoo" name="games">Zoo Tycoon</label><br>
+
+            </div>
+            
+            <div class="inner-div2">
+                <label for="feedback">Mention some of your crazy game experiences</label><br><br>
+                <textarea id="feedback"  rows="8" cols="75" placeholder="Type here.."></textarea>  
+            </div>
+
+            <div class="inner-div3">
+               <button type="submit" value="submit" id="submit" class="submit">Submit</button>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
